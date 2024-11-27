@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management System</h1>
+    <form id="employee-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="department" placeholder="Department" required />
+      <input type="number" id="salary" placeholder="Salary" required />
+      <button type="submit">Add Employee</button>
+    </form>
+    <div>
+      <input type="text" id="search" placeholder="Search employees..." />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
